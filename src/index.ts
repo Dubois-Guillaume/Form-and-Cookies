@@ -20,6 +20,14 @@ app.get("/games", (request, response) => {
   response.render("games");
 });
 
+app.get("/skate", (request, response) => {
+  response.render("skate");
+});
+
+app.get("/music", (request, response) => {
+  response.render("music");
+});
+
 app.listen(3000, () => {
   console.log("Server started on http://localhost:3000");
 });
